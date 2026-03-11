@@ -1,1 +1,80 @@
-# aula-11-03-2026
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Painel</title>
+<style>
+body{
+font-family: Arial;
+margin:40px;
+background:#e1dbdb;
+}
+.slide{
+background:#8da9a6;
+padding:30px;
+border-radius:8px;
+max-width:900px;
+margin:auto;
+}
+.secundario{
+height:400px;
+background:#559043;
+padding:20px;
+
+border-radius:8px;
+}
+button{
+padding:10px 20px;
+margin:10px;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+<div class="slide">
+<h1 id="titulo-principal">
+<!-- escreva aqui o título do painel -->
+</h1>
+<p id="descricao-principal">
+<!-- escreva aqui uma descrição do painel -->
+</p>
+<button onclick="atualizarTexto()">
+Alterar informações
+</button>
+</div>
+<div class="secundario">
+<h1 id="titulo-secundario">
+
+<!-- completar -->
+</h1>
+<p id="descricao-secundaria">
+<!-- completar -->
+</p>
+<button onclick="resetarTexto()">
+Resetar informações
+</button>
+</div>
+<script>
+const tituloOriginal = "___________";
+const descricaoOriginal = "___________";
+
+function atualizarTexto(){
+document.getElementById("titulo-principal").textContent =
+"___________";
+document.getElementById("descricao-principal").textContent =
+"___________";
+document.getElementById("titulo-secundario").textContent =
+"___________";
+document.getElementById("descricao-secundaria").textContent =
+"___________";
+}
+
+function resetarTexto(){
+document.getElementById("titulo-principal").textContent =
+tituloOriginal;
+document.getElementById("descricao-principal").textContent =
+descricaoOriginal;
+}
+</script>
+</body>
+</html>
